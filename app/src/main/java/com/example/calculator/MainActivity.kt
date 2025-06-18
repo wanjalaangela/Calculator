@@ -57,5 +57,17 @@ class MainActivity : AppCompatActivity() {
             var subtract =num2.toInt()-num1.toInt()
             tvResult.text =subtract.toString()
         }
+         btnMultiply.setOnClickListener{
+            val num5=etNum1.text.toString()
+            val num6=etNum2.text.toString()
+            val multiply=num5.toInt()*num6.toInt()
+            tvResult.text=multiply.toString()
+    }
+         btnDivide.setOnClickListener{
+            val num7=etNum1.text.toString()
+            val num8=etNum2.text.toString()
+            val multiply=num7.toInt()/num8.toInt()
+            tvResult.text=multiply.toString()
+}
     }
 }
